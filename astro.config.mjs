@@ -8,5 +8,8 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://example.com',
-  integrations: [mdx(), sitemap(), icon(), tailwind()]
+  integrations: [mdx(), sitemap(), icon({
+    include: {
+    tabler: ["*"]
+  }}), tailwind()]
 });

@@ -4,13 +4,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout>
-  <section class="bg-stone-300 py-20 mx-10 px-5 rounded-md">
+  <section class="bg-stone-300 dark:bg-stone-800 py-40 mx-10 px-10 rounded-md">
     <span data-type="topper">Quality & Affordability</span>
     <h1>Quality Hardwood Floor Installations & Repairs</h1>
     <p>
       We've been among the best hardwood floor companies in Colorado Springs for
       over 20 years!
     </p>
-    <Button classes="btn-primary">Get a quote</Button>
+    <Button text="Get a quote" classes="btn-primary" href='/contact' icon={{name: "tabler:arrow-right", side: "right"}} ></Button>
   </section>
 </BaseLayout>

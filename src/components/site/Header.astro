@@ -15,37 +15,39 @@ import logoDark from '../../assets/images/logo-white.svg';
     <div class="mr-auto">
       <a href="/" aria-label="homepage" data-navLink>
         <Image
-          src={logo}
-          alt={SITE_TITLE}
-          class="inline h-8 w-auto dark:hidden"
-          format="svg"
+				src={logo}
+				alt={SITE_TITLE}
+				class="inline h-8 pr-6 w-auto dark:hidden"
+				format="svg"
+				loading="eager"
         />
         <Image
-          src={logoDark}
-          alt={SITE_TITLE}
-          class="hidden h-8 w-auto dark:inline"
+				src={logoDark}
+				alt={SITE_TITLE}
+				class="hidden h-8 pr-6 w-auto dark:inline"
         /></a
+				loading="eager"
       >
       <NavLink
         href="/"
         data-navLink
-        class="px-3 py-2 transition-colors hover:text-amber-700">Home</NavLink
+        class="px-4 py-2 focus:ring-amber-700 outline-4 outline-amber-700 focus:ring-4 transition-colors hover:text-amber-700">Home</NavLink
       >
       <NavLink
         href="/services"
         data-navLink
-        class="px-3 py-2 transition-colors hover:text-amber-700"
+        class="px-4 py-2 focus:ring-amber-700 outline-4 focus:ring-4 transition-colors hover:text-amber-700"
         >Services</NavLink
       >
       <NavLink
         href="/about"
         data-navLink
-        class="px-3 py-2 transition-colors hover:text-amber-700">About</NavLink
+        class="px-4 py-2 focus:ring-amber-700 outline-4 focus:ring-4 transition-colors hover:text-amber-700">About</NavLink
       >
       <NavLink
         href="/gallery"
         data-navLink
-        class="px-3 py-2 transition-colors hover:text-amber-700"
+        class="px-4 py-2 focus:ring-amber-700 outline-4 focus:ring-4 transition-colors hover:text-amber-700"
         >Gallery</NavLink
       >
     </div>
