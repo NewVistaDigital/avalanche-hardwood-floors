@@ -9,6 +9,7 @@ import { slugify } from './js/slugify';
 export const SITE_TITLE = 'Avalanche Hardwood Floors';
 export const SITE_DESCRIPTION = 'The best hardwood floor company in Colorado Springs!';
 export const SITE_URL = 'https://springshardwood.com/';
+export const SITE_EMAIL = 'rickmutz@yahoo.com';
 export const SITE_UTM_SOURCE = slugify(SITE_TITLE);
 export const SITE_DEFAULT_IMAGE = '/blog-placeholder-1.jpg';
 

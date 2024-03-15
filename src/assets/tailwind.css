@@ -2,14 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+
+  .bg-primary {
+    background-color: #b45309;
+  }
+
+  .bg-secondary {
+    background-color: #4d7c0f;
+  }
+
+}
+
 
 @layer components {
   .btn {
-    @apply inline-flex items-center justify-center rounded-full border-stone-400 border bg-transparent font-medium text-center text-base leading-snug transition py-3.5 px-6 md:px-8 ease-in duration-200 focus:ring-blue-500 focus:ring-offset-blue-200 focus:ring-2 focus:ring-offset-2 hover:bg-stone-100 hover:border-stone-600 dark:text-slate-300 dark:border-slate-500 dark:hover:bg-slate-800 dark:hover:border-slate-800 cursor-pointer;
+    @apply font-medium text-center text-base transition py-3 px-6 md:px-8 ease-in duration-200 focus:ring-blue-500 focus:ring-offset-blue-200 focus:ring-2 focus:ring-offset-2 cursor-pointer;
   }
 
   .btn-primary {
-    @apply btn font-semibold bg-primary text-white border-primary hover:bg-secondary hover:border-secondary hover:text-white dark:text-white dark:bg-primary dark:border-primary dark:hover:border-secondary dark:hover:bg-secondary;
+    @apply btn font-semibold bg-primary text-white hover:bg-secondary hover:text-white dark:text-white dark:bg-primary dark:hover:bg-secondary;
   }
 
   .btn-secondary {

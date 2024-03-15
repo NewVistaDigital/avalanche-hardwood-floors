@@ -1,13 +1,8 @@
 ---
-import BlogLayout from '../layouts/BlogPost.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BlogLayout
-  title="About Me"
-  description="Lorem ipsum dolor sit amet"
-  pubDate={new Date('2 29 2024')}
-  heroImage="/blog-placeholder-about.jpg"
->
+<BaseLayout>
   <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo
@@ -69,4 +64,4 @@ import BlogLayout from '../layouts/BlogPost.astro';
     pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique
     magna.
   </p>
-</BlogLayout>
+</BaseLayout>

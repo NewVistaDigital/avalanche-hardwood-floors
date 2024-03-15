@@ -1,38 +1,61 @@
 ---
 import NavLink from '../../components/ui/NavLink.astro';
-import DarkModeToggle from '../../components/ui/DarkModeToggle.astro';
+import Alert from '../../components/ui/Alert.astro';
 import { Image } from 'astro:assets';
 
 // Content
 import { SITE_TITLE } from '../../consts';
 import logo from '../../assets/images/logo.svg';
 import logoDark from '../../assets/images/logo-white.svg';
-
-const image = {
-  href: '../../assets/images/logo.svg',
-  alt: '',
-};
 ---
 
 <header>
-  <nav>
-    <h2>
+  <Alert />
+  <nav class="container mx-auto my-6 flex justify-between px-5">
+    <div class="mr-auto">
       <a href="/" aria-label="homepage" data-navLink>
-        <Image src={logo} alt={SITE_TITLE} class="h-8 dark:hidden" />
+        <Image
+          src={logo}
+          alt={SITE_TITLE}
+          class="inline h-8 w-auto dark:hidden"
+          format="svg"
+        />
         <Image
           src={logoDark}
           alt={SITE_TITLE}
-          class="hidden h-8 dark:block"
+          class="hidden h-8 w-auto dark:inline"
         /></a
       >
-    </h2>
-    <div class="internal-links">
-      <NavLink href="/">Home</NavLink>
-      <NavLink href="/blog" data-navLink>Blog</NavLink>
-      <NavLink href="/about" data-navLink>About</NavLink>
-      <DarkModeToggle />
+      <NavLink
+        href="/"
+        data-navLink
+        class="px-3 py-2 transition-colors hover:text-amber-700">Home</NavLink
+      >
+      <NavLink
+        href="/services"
+        data-navLink
+        class="px-3 py-2 transition-colors hover:text-amber-700"
+        >Services</NavLink
+      >
+      <NavLink
+        href="/about"
+        data-navLink
+        class="px-3 py-2 transition-colors hover:text-amber-700">About</NavLink
+      >
+      <NavLink
+        href="/gallery"
+        data-navLink
+        class="px-3 py-2 transition-colors hover:text-amber-700"
+        >Gallery</NavLink
+      >
     </div>
-    <!-- <div class="social-links">
+    <div>
+      <NavLink href="/contact" class="btn btn-primary" data-navLink
+        >Free Estimate</NavLink
+      >
+    </div>
+  </nav>
+  <!-- <div class="social-links">
 			<a href="https://m.webtoo.ls/@astro" target="_blank">
 				<span class="sr-only">Follow Astro on Mastodon</span>
 				<svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32"
@@ -61,7 +84,6 @@ const image = {
 				>
 			</a>
 		</div> -->
-  </nav>
 </header>
 
 <script>
