@@ -1,20 +1,29 @@
 ---
+import { Image } from "astro:assets"
+
+// Content
+import repairBefore from "../../assets/images/repair-before.JPG";
+import repairDuring from "../../assets/images/repair-during.JPG";
+import repairAfter from "../../assets/images/repair-after.JPG";
+import stockKitchen from '../../assets/images/kitchen-1.jpg';
+import closeUp from '../../assets/images/close-up.jpg';
+import bigLiving from '../../assets/images/big-living.jpg';
 ---
 <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16">
     <div class="grid gap-4">
         <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt="">
+            <Image src={repairBefore} alt="Repair before" width="400" class="h-auto max-w-full rounded-lg"/>
         </div>
         <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt="">
+            <Image src={repairDuring} alt="Repair during" width="400" class="h-auto max-w-full rounded-lg"/>
         </div>
         <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt="">
+            <Image src={repairAfter} alt="Repair after" width="400" class="h-auto max-w-full rounded-lg"/>
         </div>
     </div>
     <div class="grid gap-4">
         <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt="">
+            <Image src={stockKitchen} alt="Kitchen" width="400" class="h-auto max-w-full rounded-lg"/>
         </div>
         <div>
             <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="">
@@ -25,7 +34,7 @@
     </div>
     <div class="grid gap-4">
         <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="">
+            <Image src={closeUp} alt="Kitchen" width="400" class="h-auto max-w-full rounded-lg"/>
         </div>
         <div>
             <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="">
@@ -36,7 +45,7 @@
     </div>
     <div class="grid gap-4">
         <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt="">
+            <Image src={bigLiving} alt="Kitchen" width="400" class="h-auto max-w-full rounded-lg"/>
         </div>
         <div>
             <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="">
