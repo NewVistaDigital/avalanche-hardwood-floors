@@ -1,21 +1,15 @@
 ---
 import { SITE_TITLE, SITE_UTM_SOURCE } from '../../consts';
-const today = new Date();
 // Content
 import  logo  from "../../assets/images/logo-white.svg";
-import { Image } from 'astro:assets';
+const today = new Date();
 ---
 
 
 <footer class="mt-10 lg:pt-20 container rounded-2xl mx-auto p-4 bg-red-900 md:p-8 lg:p-10 dark:bg-stone-900">
   <div class="mx-auto max-w-screen-xl text-center">
-      <a href="#" class=""><Image
-				src={logo}
-				alt={SITE_TITLE}
-				class="inline-block mb-5 h-8"
-				format="svg"
-				loading="eager"
-        />
+      <a href="#" class="">
+        <img src={logo.src} width={logo.width} height={logo.height} class="inline-block mb-5 h-8" alt="logo" />
       </a>
       <p class="my-6 text-stone-100 dark:text-gray-400">Your trusted hardwood floor experts serving Colorado Springs, Monument, Fountain, Pueblo, and the entire front range.</p>
       <ul class="flex flex-wrap justify-center items-center mb-6 text-stone-200 dark:text-white">
