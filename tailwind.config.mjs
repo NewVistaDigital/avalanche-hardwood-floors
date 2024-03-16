@@ -9,5 +9,6 @@ export default {
       serif: ['Merriweather', 'serif'],
     },
 	},
-	plugins: [],
+	plugins: [require('@tailwindcss/typography'),
+],
 }
