@@ -14,6 +14,6 @@ export default defineConfig({
       tabler: ["*"]
     }
   }), tailwind()],
-  // output: "server",
+  output: "static",
   adapter: netlify()
 });
