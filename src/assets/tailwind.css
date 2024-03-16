@@ -25,7 +25,7 @@
   }
 
   .btn-secondary {
-    @apply btn text-base font-medium text-center text-stone-900 border-2 border-stone-500 hover:bg-stone-300 focus:ring-4 focus:ring-stone-100 dark:text-white dark:border-stone-700 dark:hover:bg-stone-700 dark:focus:ring-stone-800;
+    @apply btn text-base font-medium text-center bg-white/50 text-stone-900 border-2 border-stone-500 hover:bg-stone-300 focus:ring-4 focus:ring-stone-100 dark:text-white dark:border-stone-700 dark:hover:bg-stone-700 dark:focus:ring-stone-800;
   }
 
   .btn-tertiary {
