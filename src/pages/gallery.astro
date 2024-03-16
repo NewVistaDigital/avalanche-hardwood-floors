@@ -1,12 +1,18 @@
 ---
+// Layout
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+// Content
+import Gallery from '../components/content/Gallery.astro'
+import CTA from '../components/ui/CallToAction.astro'
 ---
 
 <BaseLayout>
   <article class="container mx-auto lg:px-16">
     <h1>Our projects</h1>
-  <p>
-    Pictures will go here
-  </p>
+    <p>Below are just a few images from jobs we've done. These include hardwood floor repairs, wood floor site sand and refinishes, fresh installs, and more.</p>
+    <Gallery />
+    <div class="text-center">
+    <CTA class="-mb-16"/></div>
   </article>
 </BaseLayout>

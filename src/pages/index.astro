@@ -1,13 +1,18 @@
 ---
-import Button from '@components/ui/Button.astro';
+// Layout
 import BaseLayout from '../layouts/BaseLayout.astro';
-import Hero from '../components/content/HeroHome.astro';
+
+// Components
+import Button from '@components/ui/Button.astro';
+import Hero from '../components/content/HomeHero.astro';
 import About from '../components/content/HomeAbout.astro';
+import Services from '../components/content/HomeServices2.astro';
 ---
 
 <BaseLayout>
   <Hero />
   <About />
+  <Services />
   <section class="bg-stone-300 dark:bg-stone-800 py-40 mx-10 px-10 rounded-md">
     <span data-type="topper">Quality & Affordability</span>
     <h1>Quality Hardwood Floor Installations & Repairs</h1>
