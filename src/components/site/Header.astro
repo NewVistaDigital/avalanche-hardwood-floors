@@ -5,7 +5,7 @@ import { Image } from 'astro:assets';
 
 // Content
 import { SITE_TITLE } from '../../consts';
-import logo from '../../assets/images/logo.svg?raw';
+import logo from '../../assets/images/logo.svg';
 import logoDark from '../../assets/images/logo-white.svg?raw';
 ---
 
@@ -14,8 +14,10 @@ import logoDark from '../../assets/images/logo-white.svg?raw';
   <nav class="container mx-auto my-6 flex justify-between px-5">
     <div class="mr-auto">
       <a href="/" aria-label="homepage" class="inline-block h-auto align-middle" data-navLink>
-        <span class="inline-block w-auto pr-6 h-8 dark:hidden"><Fragment set:html={logo}></span>
-        <span class="hidden w-auto pr-6 h-8 dark:inline-block"><Fragment set:html={logoDark}></span>
+        <!-- <span class="inline-block w-auto pr-6 h-8 dark:hidden"><Fragment set:html={logo}></span>
+        <span class="hidden w-auto pr-6 h-8 dark:inline-block"><Fragment set:html={logoDark}></span> -->
+          <img src={logo.src} width={logo.width} height={logo.height} class="inline-block w-auto pr-6 h-8 dark:hidden" alt="logo" />
+          <img src={logoDark.src} width={logoDark.width} height={logoDark.height} class="inline-block w-auto pr-6 h-8 dark:hidden" alt="logo" />
         </a>
       <NavLink
         href="/"
