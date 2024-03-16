@@ -1,0 +1,17 @@
+---
+import Button from "@components/ui/Button.astro"
+// Const
+import { getImage } from "astro:assets"
+import myImage from "../../assets/images/kitchen1.jpg"
+const optimizedBackgroundImage = await getImage({ src: myImage })
+---
+<section class="container rounded-2xl mx-auto mb-12 bg-stone-300 dark:bg-stone-900 bg-cover bg-bottom bg-blend-overlay" style={`background-image: url('${optimizedBackgroundImage.src}')`}>
+    <div class="py-10 px-4 mx-auto max-w-screen-xl text-center lg:py-20 lg:px-12">
+        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-stone-900 md:text-5xl lg:text-6xl dark:text-white">Hardwood floors done right. Guaranteed.</h1>
+        <p class="mb-8 text-lg font-normal text-stone-900 lg:text-xl sm:px-16 xl:px-48 dark:text-stone-400">Here at Avalanche Hardwood Floors we focus on quality and trust. Give us a call for a free, no pressure estimate to help get you pointed in the right direction.</p>
+        <div class="mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+            <Button text="Get a quote" classes="btn-primary" href='/contact' icon={{name: "tabler:arrow-right", side: "right"}} ></Button>
+            <Button text="View projects" classes="btn-secondary" href='/gallery' ></Button>
+        </div>
+    </div>
+</section>

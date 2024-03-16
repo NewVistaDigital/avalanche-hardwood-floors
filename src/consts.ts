@@ -7,7 +7,12 @@
 import { slugify } from './js/slugify';
 
 export const SITE_TITLE = 'Avalanche Hardwood Floors';
-export const SITE_DESCRIPTION = 'Colorado Springs best hardwood floor installation and repairs since 1999.';
+export const SITE_DESCRIPTION = 'The best hardwood floor company in Colorado Springs!';
 export const SITE_URL = 'https://springshardwood.com/';
-export const SITE_DEFAULT_IMAGE = '/new-vista-starterkit.jpg';
+export const SITE_EMAIL = 'rickmutz@yahoo.com';
 export const SITE_UTM_SOURCE = slugify(SITE_TITLE);
+export const SITE_DEFAULT_IMAGE = '/blog-placeholder-1.jpg';
+
+export const UI_THEME = 'system'; // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
+
+export const ANALYTICS_GA4 = null;

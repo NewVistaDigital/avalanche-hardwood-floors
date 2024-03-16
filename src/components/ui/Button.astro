@@ -37,16 +37,9 @@ const {
   ]}
   {...rest}
 >
-  {icon && icon.side === 'left' && <Icon name={icon.name} />}
+  {icon && icon.side === 'left' && <Icon name={icon.name} class="inline mr-3 text-xl align-middle" />}
 
-  <span>{text}</span>
+  <slot>{text}</slot>
 
-  {icon && icon.side === 'right' && <Icon name={icon.name} />}
+  {icon && icon.side === 'right' && <Icon name={icon.name} class="inline ml-3 text-xl align-middle" />}
 </a>
-
-<style>
-  svg {
-    display: inline-block;
-    vertical-align: text-bottom;
-  }
-</style>

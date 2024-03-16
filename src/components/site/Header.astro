@@ -1,17 +1,63 @@
 ---
-import NavLink from '../ui-components/NavLink.astro';
-import { SITE_TITLE } from '../consts';
+import NavLink from '../../components/ui/NavLink.astro';
+import Alert from '../../components/ui/Alert.astro';
+import { Image } from 'astro:assets';
+
+// Content
+import { SITE_TITLE } from '../../consts';
+import logo from '../../assets/images/logo.svg';
+import logoDark from '../../assets/images/logo-white.svg';
 ---
 
 <header>
-  <nav>
-    <h2><a href="/">{SITE_TITLE}</a></h2>
-    <div class="internal-links">
-      <NavLink href="/">Home</NavLink>
-      <NavLink href="/blog">Blog</NavLink>
-      <NavLink href="/about">About</NavLink>
+  <Alert />
+  <nav class="container mx-auto my-6 flex justify-between px-5">
+    <div class="mr-auto">
+      <a href="/" aria-label="homepage" data-navLink>
+        <Image
+				src={logo}
+				alt={SITE_TITLE}
+				class="inline h-8 pr-6 w-auto dark:hidden"
+				format="svg"
+				loading="eager"
+        />
+        <Image
+				src={logoDark}
+				alt={SITE_TITLE}
+				class="hidden h-8 pr-6 w-auto dark:inline"
+        /></a
+				loading="eager"
+      >
+      <NavLink
+        href="/"
+        data-navLink
+        class="px-4 py-2 focus:ring-amber-700 outline-4 outline-amber-700 focus:ring-4 transition-colors hover:text-amber-700">Home</NavLink
+      >
+      <NavLink
+        href="/services"
+        data-navLink
+        class="px-4 py-2 focus:ring-amber-700 outline-4 focus:ring-4 transition-colors hover:text-amber-700"
+        >Services</NavLink
+      >
+      <NavLink
+        href="/about"
+        data-navLink
+        class="px-4 py-2 focus:ring-amber-700 outline-4 focus:ring-4 transition-colors hover:text-amber-700">About</NavLink
+      >
+      <NavLink
+        href="/gallery"
+        data-navLink
+        class="px-4 py-2 focus:ring-amber-700 outline-4 focus:ring-4 transition-colors hover:text-amber-700"
+        >Gallery</NavLink
+      >
     </div>
-    <!-- <div class="social-links">
+    <div>
+      <NavLink href="/contact" class="btn btn-primary" data-navLink
+        >Free Estimate</NavLink
+      >
+    </div>
+  </nav>
+  <!-- <div class="social-links">
 			<a href="https://m.webtoo.ls/@astro" target="_blank">
 				<span class="sr-only">Follow Astro on Mastodon</span>
 				<svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32"
@@ -40,47 +86,15 @@ import { SITE_TITLE } from '../consts';
 				>
 			</a>
 		</div> -->
-  </nav>
 </header>
 
-<style>
-  header {
-    margin: 0;
-    padding: 0 1em;
-    background: white;
-    box-shadow: 0 2px 8px rgba(var(--black), 5%);
-  }
-  h2 {
-    margin: 0;
-    font-size: 1em;
-  }
+<script>
+  // Accessibility tool: add aria-current to current page nav links.
+  const navLinks = document.querySelectorAll('[data-navLink]');
 
-  h2 a,
-  h2 a.active {
-    text-decoration: none;
-  }
-  nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  nav a {
-    padding: 1em 0.5em;
-    color: var(--black);
-    border-bottom: 4px solid transparent;
-    text-decoration: none;
-  }
-  nav a.active {
-    text-decoration: none;
-    border-bottom-color: var(--accent);
-  }
-  .social-links,
-  .social-links a {
-    display: flex;
-  }
-  @media (max-width: 720px) {
-    .social-links {
-      display: none;
+  navLinks.forEach((link) => {
+    if (link.getAttribute('href') === window.location.pathname) {
+      link.setAttribute('aria-current', 'page');
     }
-  }
-</style>
+  });
+</script>
