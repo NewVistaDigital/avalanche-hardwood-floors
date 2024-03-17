@@ -1,10 +1,9 @@
 ---
-import { Image } from "astro:assets";
+import { Image } from 'astro:assets';
 
 // Content
-import repairA from "../../assets/images/repair-before.jpg";
 import repairB from "../../assets/images/repair-during.jpg";
-import repairC from "../../assets/images/repair-after.jpg";
+import repairC from "../../assets/images/repair-before.png";
 import stockKitchen from '../../assets/images/kitchen-1.jpg';
 import closeUp from '../../assets/images/close-up.jpg';
 import bigLiving from '../../assets/images/big-living.jpg';
@@ -12,7 +11,7 @@ import bigLiving from '../../assets/images/big-living.jpg';
 <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16">
     <div class="grid gap-4">
         <div>
-            <Image src={repairA} alt="Repair before" width="410" class="h-auto max-w-full rounded-lg"/>
+            <Image src={bigLiving} alt="Repair before" width="410" class="h-auto max-w-full rounded-lg"/>
         </div>
         <div>
             <Image src={repairB} alt="Repair during" width="410" class="h-auto max-w-full rounded-lg"/>
