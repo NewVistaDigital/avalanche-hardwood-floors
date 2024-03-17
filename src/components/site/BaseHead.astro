@@ -102,22 +102,4 @@ const { title, description } = Astro.props;
       theme.value = isDark ? 'dark' : 'light';
       setPreference();
     });
-
-  const initTheme = function () {
-    if (
-      (defaultTheme && defaultTheme.endsWith(':only')) ||
-      (!localStorage.theme && defaultTheme !== 'system')
-    ) {
-      applyTheme(defaultTheme.replace(':only', ''));
-    } else if (
-      localStorage.theme === 'dark' ||
-      (!('theme' in localStorage) &&
-        window.matchMedia('(prefers-color-scheme: dark)').matches)
-    ) {
-      applyTheme('dark');
-    } else {
-      applyTheme('light');
-    }
-  };
-  initTheme();
 </script>
