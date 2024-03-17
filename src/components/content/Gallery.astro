@@ -4,7 +4,8 @@ import { Image } from 'astro:assets';
 
 // Content
 import bigLiving from '../../assets/images/big-living.jpg';
-import repairB from '../../assets/images/repair-during.jpg';
+import repairA from '../../assets/images/repair-before.png';
+import repairB from '../../assets/images/repair-during.png';
 import repairC from '../../assets/images/repair-before.png';
 import stockKitchen from '../../assets/images/kitchen-1.jpg';
 import closeUp from '../../assets/images/close-up.jpg';
@@ -23,10 +24,10 @@ import closeUp from '../../assets/images/close-up.jpg';
     </div>
     <div class="grid gap-4">
         <div>
-            <Image src={stockKitchen} alt="Kitchen" width="410" class="h-auto max-w-full rounded-lg"/>
+            <Image src={repairA} alt="Kitchen" width="410" class="h-auto max-w-full rounded-lg"/>
         </div>
         <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="">
+            <Image src={stockKitchen} alt="Kitchen" width="410" class="h-auto max-w-full rounded-lg"/>
         </div>
         <div>
             <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="">
