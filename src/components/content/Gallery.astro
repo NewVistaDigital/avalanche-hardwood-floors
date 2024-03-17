@@ -1,10 +1,10 @@
 ---
-import { Image } from "astro:assets"
+import { Image } from "astro:assets";
 
 // Content
-import repairBefore from "../../assets/images/repair-before.jpg";
-import repairDuring from "../../assets/images/repair-during.jpg";
-import repairAfter from "../../assets/images/repair-after.jpg";
+import repairA from "../../assets/images/repair-before.jpg";
+import repairB from "../../assets/images/repair-during.jpg";
+import repairC from "../../assets/images/repair-after.jpg";
 import stockKitchen from '../../assets/images/kitchen-1.jpg';
 import closeUp from '../../assets/images/close-up.jpg';
 import bigLiving from '../../assets/images/big-living.jpg';
@@ -12,13 +12,13 @@ import bigLiving from '../../assets/images/big-living.jpg';
 <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16">
     <div class="grid gap-4">
         <div>
-            <Image src={repairBefore} alt="Repair before" width="410" class="h-auto max-w-full rounded-lg"/>
+            <Image src={repairA} alt="Repair before" width="410" class="h-auto max-w-full rounded-lg"/>
         </div>
         <div>
-            <Image src={repairDuring} alt="Repair during" width="410" class="h-auto max-w-full rounded-lg"/>
+            <Image src={repairB} alt="Repair during" width="410" class="h-auto max-w-full rounded-lg"/>
         </div>
         <div>
-            <Image src={repairAfter} alt="Repair after" width="410" class="h-auto max-w-full rounded-lg"/>
+            <Image src={repairC} alt="Repair after" width="410" class="h-auto max-w-full rounded-lg"/>
         </div>
     </div>
     <div class="grid gap-4">
@@ -45,7 +45,7 @@ import bigLiving from '../../assets/images/big-living.jpg';
     </div>
     <div class="grid gap-4">
         <div>
-            <Image src={bigLiving} alt="Kitchen" width="410" class="h-auto max-w-full rounded-lg"/>
+            <Image src={bigLiving} alt="Living room wood floors" width="410" class="h-auto max-w-full rounded-lg"/>
         </div>
         <div>
             <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="">
