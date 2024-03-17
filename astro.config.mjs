@@ -13,6 +13,6 @@ export default defineConfig({
       tabler: ["*"]
     }
   }), tailwind()],
-  output: "static",
+  output: "hybrid",
   adapter: netlify()
 });
