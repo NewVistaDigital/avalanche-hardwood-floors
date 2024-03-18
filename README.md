@@ -1,44 +1,9 @@
-# Astro Starter Kit: Blog
-
-```sh
-npm create astro@latest -- --template blog
-```
+# Avalanche Hardwood Floors
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8a58c02e-2733-4c2d-9ac7-4049f486f600/deploy-status)](https://app.netlify.com/sites/avalanche-hardwood-floors/deploys)
+[![NVD Status](https://img.shields.io/badge/NVD_Starterkit-0.2.0_alpha-blue)](https://github.com/NewVistaDigital/astro-starterkit)
 
 ![blog](/public/new-vista-digital-starterkit.jpg)
 
-## New Installation
-To use the `Button.astro` component you ned to run
-
-```sh
-npx add astro-icon
-```
-
-Update `consts.ts` with relevant site information.
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-├── public/
-├── src/
-│   ├── components/
-│   ├── content/
-│   ├── layouts/
-│   └── pages/
-├── astro.config.mjs
-├── README.md
-├── package.json
-└── tsconfig.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
-
-Any static assets, like images, can be placed in the `public/` directory.
 
 ## 🧞 Commands
 
@@ -53,10 +18,6 @@ All commands are run from the root of the project, from a terminal:
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
 
-## 👀 Want to learn more?
+## 👀 Learn about Astro
 
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-
-## Credit
-
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+Check out the [Astro documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
