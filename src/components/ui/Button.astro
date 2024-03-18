@@ -5,7 +5,7 @@ import { Icon } from 'astro-icon/components';
 interface Props {
   text: string;
   href: string;
-  style?: 'primary' | 'secondary';
+  style?: 'primary' | 'secondary' | 'white';
   icon?: {
     name: string;
     side: 'left' | 'right';
@@ -20,7 +20,7 @@ const {
   href,
   style,
   icon,
-  isFilled = true,
+  isFilled = false,
   borderVisible = false,
   classes,
   ...rest
@@ -33,12 +33,21 @@ const {
     classes,
     'btn-' + style,
     { filled: isFilled, bordered: borderVisible },
+    '*:transition-all *:hover:translate-x-2',
   ]}
   {...rest}
 >
-  {icon && icon.side === 'left' && <Icon name={icon.name} class="inline mr-3 text-xl align-middle" />}
+  {
+    icon && icon.side === 'left' && (
+      <Icon name={icon.name} class="mr-3 inline align-middle text-xl" />
+    )
+  }
 
   <slot>{text}</slot>
 
-  {icon && icon.side === 'right' && <Icon name={icon.name} class="inline ml-3 text-xl align-middle" />}
+  {
+    icon && icon.side === 'right' && (
+      <Icon name={icon.name} class="ml-3 inline align-middle text-xl" />
+    )
+  }
 </a>

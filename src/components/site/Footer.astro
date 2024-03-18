@@ -3,46 +3,97 @@
 import { SITE_TITLE, SITE_UTM_SOURCE } from '../../consts';
 
 // Content
-import  logo  from "../../assets/images/logo-white.svg";
+import logo from '../../assets/images/logo-white.svg';
 const today = new Date();
 ---
 
-
-<footer class="mt-10 lg:pt-20 container rounded-2xl mx-auto p-4 bg-red-900 md:p-8 lg:p-10 dark:bg-stone-900 relative overflow-hidden mb-10 dark:mb-0">
-    <div id="bg" class="absolute inset-0 -bottom-40 z-0 stroke-red-800 dark:stroke-stone-800 top-auto left-auto">
-        <svg xmlns="http://www.w3.org/2000/svg" width="640" height="944" viewBox="0 0 640 944" fill="none">
-            <g clip-path="url(#clip0_20_14025)">
-            <path d="M362.245 0.000229527C455.485 535.279 113.669 929.157 24.1779 722.483C-47.0426 558.005 490.275 534.875 616.912 944.633" stroke="inherit" stroke-width="18.8441"/>
-            </g></svg>
-    </div>
-  <div class="mx-auto max-w-screen-xl text-center z-10 relative">
-      <a href="/" class="">
-        <img src={logo.src} width={logo.width} height={logo.height} class="inline-block mb-5 h-8" alt="logo" />
-      </a>
-      <p class="my-6 text-stone-100 dark:text-gray-400">Your trusted hardwood floor experts serving Colorado Springs, Monument, Fountain, Pueblo, and the entire front range.</p>
-      <ul class="flex flex-wrap justify-center items-center mb-6 text-stone-200 dark:text-white">
-          <li>
-              <a href="/" class="mx-2 text-lg hover:text-amber-300 transition-colors md:mx-3 ">Home</a>
-          </li>
-          <li>
-              <a href="/about" class="mx-2 text-lg hover:text-amber-300 transition-colors md:mx-3">About Us</a>
-          </li>
-          <li>
-              <a href="/services" class="mx-2 text-lg hover:text-amber-300 transition-colors md:mx-3 ">Our Services</a>
-          </li>
-          <li>
-              <a href="/gallery" class="mx-2 text-lg hover:text-amber-300 transition-colors md:mx-3">Gallery</a>
-          </li>
-          <li>
-              <a href="/contact" class="mx-2 text-lg hover:text-amber-300 transition-colors md:mx-3">Contact us</a>
-          </li>
-      </ul>
-      <span class=" text-red-200 sm:text-center dark:text-gray-400">
-  <div class="text-sm mt-2">
-		<p>&copy; {today.getFullYear()} {SITE_TITLE}. All rights reserved.</p>
-        <p class="mt-1.5 text-red-300 dark:text-stone-500 text-xs">Built from scratch with &#9825; by <a
-      href=`https://newvistadigital.com/?utm_source=${SITE_UTM_SOURCE}`
-      target="_blank" class="underline hover:text-white transition-colors">New Vista Digital</a
-    ></p>
-	</div>
+<footer
+  class="container relative mx-auto mb-10 mt-10 overflow-hidden rounded-2xl bg-red-900 p-4 dark:mb-0 dark:bg-stone-900 md:p-8 lg:p-10 lg:pt-20"
+>
+  <div
+    id="bg"
+    class="absolute inset-0 -bottom-40 left-auto top-auto z-0 stroke-red-800 dark:stroke-stone-800"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="640"
+      height="944"
+      viewBox="0 0 640 944"
+      fill="none"
+    >
+      <g clip-path="url(#clip0_20_14025)">
+        <path
+          d="M362.245 0.000229527C455.485 535.279 113.669 929.157 24.1779 722.483C-47.0426 558.005 490.275 534.875 616.912 944.633"
+          stroke="inherit"
+          stroke-width="18.8441"></path>
+      </g></svg
+    >
+  </div>
+  <div class="relative z-10 mx-auto max-w-screen-xl text-center">
+    <a href="/" class="">
+      <img
+        src={logo.src}
+        width={logo.width}
+        height={logo.height}
+        class="mb-5 inline-block h-8"
+        alt="logo"
+      />
+    </a>
+    <p class="my-6 text-stone-100 dark:text-gray-400">
+      Your trusted hardwood floor experts serving Colorado Springs, Monument,
+      Fountain, Pueblo, and the entire front range.
+    </p>
+    <ul
+      class="mb-6 flex flex-wrap items-center justify-center gap-3 text-stone-200 dark:text-white"
+    >
+      <li>
+        <a
+          href="/"
+          class="p-2 text-lg transition-colors hover:text-amber-300 md:p-3"
+          >Home</a
+        >
+      </li>
+      <li>
+        <a
+          href="/about"
+          class="p-2 text-lg transition-colors hover:text-amber-300 md:p-3"
+          >About Us</a
+        >
+      </li>
+      <li>
+        <a
+          href="/services"
+          class="p-2 text-lg transition-colors hover:text-amber-300 md:p-3"
+          >Our Services</a
+        >
+      </li>
+      <li>
+        <a
+          href="/gallery"
+          class="p-2 text-lg transition-colors hover:text-amber-300 md:p-3"
+          >Gallery</a
+        >
+      </li>
+      <li>
+        <a
+          href="/contact"
+          class="p-2 text-lg transition-colors hover:text-amber-300 md:p-3"
+          >Contact us</a
+        >
+      </li>
+    </ul>
+    <span class="text-red-200 dark:text-gray-400 sm:text-center">
+      <div class="mt-2 text-sm">
+        <p>&copy; {today.getFullYear()} {SITE_TITLE}. All rights reserved.</p>
+        <p class="mt-1.5 text-xs text-red-300 dark:text-stone-500">
+          Built from scratch with &#9825; by <a
+            href=`https://newvistadigital.com/?utm_source=${SITE_UTM_SOURCE}`
+            target="_blank"
+            class="underline transition-colors hover:text-white"
+            >New Vista Digital</a
+          >
+        </p>
+      </div>
+    </span>
+  </div>
 </footer>
