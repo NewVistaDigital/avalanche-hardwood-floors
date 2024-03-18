@@ -7,6 +7,7 @@ import Alert from '../../components/ui/Alert.astro';
 import logo from '../../assets/images/logo.svg?raw';
 import logoDark from '../../assets/images/logo-white.svg?raw';
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
+import { Icon } from 'astro-icon/components';
 
 ---
 
@@ -37,7 +38,7 @@ import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
       </div>
     </div>
     <MenuItems class="hidden lg:flex">
-      <ul class="flex flex-col lg:flex-row items-end lg:gap-5">
+      <ul class="flex flex-col lg:flex-row items-end items-center lg:gap-5">
         <li><NavLink
         href="/"
         data-navLink
