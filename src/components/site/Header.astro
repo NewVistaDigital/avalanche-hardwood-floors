@@ -10,14 +10,13 @@ import logoDark from '../../assets/images/logo-white.svg?raw';
 
 <header>
   <Alert />
-  <nav class="container mx-auto my-6 flex justify-between px-5">
-    <div class="mr-auto">
+  <nav class="bg-white">
+    <div class=" flex justify-between items-center container mx-auto p-5">
       <a href="/" aria-label="homepage" class="inline-block h-auto align-middle" data-navLink>
         <span class="inline-block w-auto pr-6 h-8 dark:hidden"><Fragment set:html={logo}></span>
         <span class="hidden w-auto pr-6 h-8 dark:inline-block"><Fragment set:html={logoDark}></span>
-          <!-- <img src={logo.src} width={logo.width} height={logo.height} class="inline-block w-auto pr-6 h-8 dark:hidden" alt="logo" />
-          <img src={logo.src} width={logo.width} height={logo.height} class="inline-block w-auto pr-6 h-8 dark:hidden" alt="logo" /> -->
-        </a>
+      </a>
+      <div class="ml-auto mr-4">
       <NavLink
         href="/"
         data-navLink
@@ -39,12 +38,8 @@ import logoDark from '../../assets/images/logo-white.svg?raw';
         data-navLink
         class="px-4 py-2 text-xl focus:ring-amber-700 outline-4 focus:ring-4 transition-colors hover:text-red-600"
         >Gallery</NavLink
-      >
-    </div>
-    <div>
-      <NavLink href="/contact" class="btn btn-primary" data-navLink
-        >Free Estimate</NavLink
-      >
+      ></div>
+      <NavLink href="/contact" class="btn btn-primary" data-navLink>Get a quote</NavLink>
     </div>
   </nav>
 </header>
@@ -58,36 +53,6 @@ import logoDark from '../../assets/images/logo-white.svg?raw';
       link.setAttribute('aria-current', 'page');
     }
   });
+
+
 </script>
-
-
-
-
-<nav class="bg-white border-gray-200 dark:bg-gray-900">
-  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-    <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
-        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
-    </a>
-
-    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-        <li>
-          <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500" aria-current="page">Home</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
