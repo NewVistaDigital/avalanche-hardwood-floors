@@ -1,13 +1,28 @@
 ---
+// Components
 import Button from '../../components/ui/Button.astro'
+
+// Data
+import { SITE_PHONE, SITE_PHONE_HREF } from 'src/consts'
 ---
 <div class="text-center">
-<section class="max-lg:container bg-white shadow-xl dark:shadow-red-800/25 dark:bg-red-950 lg:-mb-20 rounded-3xl mt-12 z-10 inline-block">
-  <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-    <div class="max-w-screen-md text-center">
-      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-stone-900 dark:text-white">Let's find more that brings us together.</h2>
-      <p class="mb-8 font-light text-stone-500 sm:text-xl dark:text-stone-400">Flowbite helps you connect with friends, family and communities of people who share your interests. Connecting with your friends and family as well as discovering new ones is easy with features like Groups, Watch and Marketplace.</p>
+<section class="max-lg:container bg-white dark:bg-red-950 bg-blend-overlay bg-cover shadow-xl dark:shadow-red-800/10 lg:-mb-20 rounded-3xl mt-12 z-10 inline-block relative overflow-hidden">
+  <div class="py-8 px-4 sm:py-16 lg:px-20 relative">
+    <div id="bg" class="absolute inset-0 top-auto -left-10 z-0 stroke-red-100 dark:stroke-red-900">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-screen" viewBox="0 0 1250 586" fill="none">
+      <g clip-path="url(#clip0_60_16439)">
+      <path d="M19.43 557.924C305.587 377.185 514.434 675.231 739.877 448.31C863.127 324.252 903.348 62.5565 1233.19 30.0321" stroke="inherit" stroke-width="18" stroke-linecap="round"/>
+      </g></svg>
+    </div>
+    <div class="text-center z-10 relative">
+      <h2 class="mb-10 text-4xl tracking-tight font-extrabold text-stone-900 dark:text-white">Get a quote today for your project.</h2>
+      <div class="flex justify-around">
+        <div>
+        <h3>Call us</h3>
+        <p><a href={SITE_PHONE_HREF} class="text-2xl font-bold text-red-800 dark:text-amber-100">{SITE_PHONE}</a></p>
+        </div>
         <Button text='Schedule your free estimate' href="/contact" style='primary' icon={{name: "tabler:arrow-right", side: "right"}} />
+      </div>
     </div>
   </div>
 </section>

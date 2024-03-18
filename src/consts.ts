@@ -12,6 +12,8 @@ export const SITE_URL = 'https://springshardwood.com/';
 export const SITE_EMAIL = 'rickmutz@yahoo.com';
 export const SITE_UTM_SOURCE = slugify(SITE_TITLE);
 export const SITE_DEFAULT_IMAGE = '/blog-placeholder-1.jpg';
+export const SITE_PHONE = '(719) 492-8134'
+export const SITE_PHONE_HREF = 'tel:7194928134'
 
 export const UI_THEME = 'system'; // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
 

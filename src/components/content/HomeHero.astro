@@ -1,9 +1,11 @@
 ---
+// Components
 import Button from "@components/ui/Button.astro"
-// Const
+
+// Content
 import { getImage } from "astro:assets"
-import myImage from "../../assets/images/kitchen1.jpg"
-const optimizedBackgroundImage = await getImage({ src: myImage, width:1000, })
+import kitchen from "../../assets/images/kitchen1.jpg"
+const optimizedBackgroundImage = await getImage({ src: kitchen, width:1000, })
 ---
 <section class="container rounded-2xl mx-auto mb-12 bg-stone-300 dark:bg-stone-900 bg-cover bg-bottom bg-blend-overlay" style={`background-image: url('${optimizedBackgroundImage.src}')`}>
     <div class="py-10 px-4 mx-auto max-w-screen-xl text-center lg:py-40 lg:px-20">
