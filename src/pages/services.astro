@@ -5,7 +5,7 @@ import { Icon } from 'astro-icon/components';
 import { Image } from 'astro:assets';
 
 // Content
-import newInstall from '../assets/images/IMG_3381.jpg';
+import newInstall from '../assets/images/kitchen-1.jpg';
 ---
 
 <BaseLayout>
@@ -40,7 +40,7 @@ import newInstall from '../assets/images/IMG_3381.jpg';
     </div>
   </section>
 
-  <section class="overflow-x-hidden text-center dark:bg-stone-900">
+  <section class="text-center dark:bg-stone-900">
     <div class="mx-auto max-w-screen-xl py-8 sm:py-16 md:px-4 lg:px-6">
       <div class="mx-auto mb-16 max-w-screen-md">
         <h2
@@ -63,13 +63,13 @@ import newInstall from '../assets/images/IMG_3381.jpg';
         <!-- Card 1 odd -->
         <div
           data-type="card"
-          class="flex gap-12 rounded-2xl bg-white p-4 pb-12 shadow-2xl dark:bg-stone-800 max-md:flex-col max-md:items-center md:p-12"
+          class="flex items-center gap-12 rounded-2xl bg-white p-4 pb-12 shadow-2xl dark:bg-stone-800 max-md:flex-col max-md:items-center md:p-12"
         >
           <Image
             src={newInstall}
             alt="New install"
             width="600"
-            class="rounded-xl shadow-lg max-sm:scale-[1.15] sm:max-md:-mt-12 md:-ml-20 md:max-w-[50%]"
+            class="rounded-xl shadow-lg max-sm:mb-12 max-sm:scale-[1.15] sm:max-md:-mt-12 md:-ml-20 md:max-w-[50%]"
           />
           <div class="flex flex-col max-md:items-center">
             <div
@@ -94,34 +94,154 @@ import newInstall from '../assets/images/IMG_3381.jpg';
         <!-- Card 2 even -->
         <div
           data-type="card"
-          class="flex flex-row-reverse gap-12 rounded-2xl bg-white p-4 pb-12 shadow-2xl dark:bg-stone-800 max-md:flex-col max-md:items-center md:p-12"
+          class="flex flex-row-reverse items-center gap-12 rounded-2xl bg-white p-4 pb-12 shadow-2xl dark:bg-stone-800 max-md:flex-col max-md:items-center md:p-12"
         >
           <Image
             src={newInstall}
-            alt="New install"
+            alt="Hardwood floor refinishing"
             width="600"
-            class="rounded-xl shadow-lg max-sm:scale-[1.15] sm:max-md:-mt-12 md:-mr-20 md:max-w-[50%]"
+            class="rounded-xl shadow-lg max-sm:mb-12 max-sm:scale-[1.15] sm:max-md:-mt-12 md:-mr-20 md:max-w-[50%]"
           />
           <div class="flex flex-col max-md:items-center">
             <div
               class="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-red-100 dark:bg-red-900 max-sm:mx-auto lg:h-12 lg:w-12"
             >
               <Icon
-                name="tabler:axe"
+                name="tabler:paint-filled"
+                class="size-6 text-red-800 dark:text-red-300"
+              />
+            </div>
+
+            <h3 class="mb-2 text-2xl font-bold dark:text-white">Refinishing</h3>
+            <p class="text-stone-500 dark:text-stone-400">
+              Whether you need a maintenance coat or a full re-sand, we can make
+              your existing floors look good as new without making a huge mess.
+            </p>
+          </div>
+        </div>
+        <!-- end card 2 -->
+        <!-- Card 3 odd -->
+        <div
+          data-type="card"
+          class="flex items-center gap-12 rounded-2xl bg-white p-4 pb-12 shadow-2xl dark:bg-stone-800 max-md:flex-col max-md:items-center md:p-12"
+        >
+          <Image
+            src={newInstall}
+            alt="New install"
+            width="600"
+            class="rounded-xl shadow-lg max-sm:mb-12 max-sm:scale-[1.15] sm:max-md:-mt-12 md:-ml-20 md:max-w-[50%]"
+          />
+          <div class="flex flex-col max-md:items-center">
+            <div
+              class="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-red-100 dark:bg-red-900 max-sm:mx-auto lg:h-12 lg:w-12"
+            >
+              <Icon
+                name="tabler:playlist-add"
                 class="size-6 text-red-800 dark:text-red-300"
               />
             </div>
 
             <h3 class="mb-2 text-2xl font-bold dark:text-white">
-              New Installs
+              Additions & Extensions
             </h3>
             <p class="text-stone-500 dark:text-stone-400">
-              Bring fresh life to your home. We'll install the material and
-              finish of your choice.
+              Want to extend your kitchen to the entire floor? We can lace-in
+              new installs with existing, making a seamless transition from old
+              to new.
             </p>
           </div>
         </div>
-        <!-- end card 2 -->
+        <!-- end card 3 -->
+        <!-- Card 4 even -->
+        <div
+          data-type="card"
+          class="flex flex-row-reverse items-center gap-12 rounded-2xl bg-white p-4 pb-12 shadow-2xl dark:bg-stone-800 max-md:flex-col max-md:items-center md:p-12"
+        >
+          <Image
+            src={newInstall}
+            alt="Hardwood floor refinishing"
+            width="600"
+            class="rounded-xl shadow-lg max-sm:mb-12 max-sm:scale-[1.15] sm:max-md:-mt-12 md:-mr-20 md:max-w-[50%]"
+          />
+          <div class="flex flex-col max-md:items-center">
+            <div
+              class="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-red-100 dark:bg-red-900 max-sm:mx-auto lg:h-12 lg:w-12"
+            >
+              <Icon
+                name="tabler:bandage"
+                class="size-6 text-red-800 dark:text-red-300"
+              />
+            </div>
+
+            <h3 class="mb-2 text-2xl font-bold dark:text-white">Repairs</h3>
+            <p class="text-stone-500 dark:text-stone-400">
+              Water damage? Damaged pre-finished hardwood floors? We can fix
+              your hardwood floors. You won't even know we were there.
+            </p>
+          </div>
+        </div>
+        <!-- end card 4 -->
+        <!-- Card 5 odd -->
+        <div
+          data-type="card"
+          class="flex items-center gap-12 rounded-2xl bg-white p-4 pb-12 shadow-2xl dark:bg-stone-800 max-md:flex-col max-md:items-center md:p-12"
+        >
+          <Image
+            src={newInstall}
+            alt="New install"
+            width="600"
+            class="rounded-xl shadow-lg max-sm:mb-12 max-sm:scale-[1.15] sm:max-md:-mt-12 md:-ml-20 md:max-w-[50%]"
+          />
+          <div class="flex flex-col max-md:items-center">
+            <div
+              class="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-red-100 dark:bg-red-900 max-sm:mx-auto lg:h-12 lg:w-12"
+            >
+              <Icon
+                name="tabler:home-plus"
+                class="size-6 text-red-800 dark:text-red-300"
+              />
+            </div>
+
+            <h3 class="mb-2 text-2xl font-bold dark:text-white">
+              New Construction
+            </h3>
+            <p class="text-stone-500 dark:text-stone-400">
+              We've worked with plenty of builders on new and custom homes.
+            </p>
+          </div>
+        </div>
+        <!-- end card 5 -->
+        <!-- Card 6 even -->
+        <div
+          data-type="card"
+          class="flex flex-row-reverse items-center gap-12 rounded-2xl bg-white p-4 pb-12 shadow-2xl dark:bg-stone-800 max-md:flex-col max-md:items-center md:p-12"
+        >
+          <Image
+            src={newInstall}
+            alt="Hardwood floor refinishing"
+            width="600"
+            class="rounded-xl shadow-lg max-sm:mb-12 max-sm:scale-[1.15] sm:max-md:-mt-12 md:-mr-20 md:max-w-[50%]"
+          />
+          <div class="flex flex-col max-md:items-center">
+            <div
+              class="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-red-100 dark:bg-red-900 max-sm:mx-auto lg:h-12 lg:w-12"
+            >
+              <Icon
+                name="tabler:background"
+                class="size-6 text-red-800 dark:text-red-300"
+              />
+            </div>
+
+            <h3 class="mb-2 text-2xl font-bold dark:text-white">
+              Custom Inlays
+            </h3>
+            <p class="text-stone-500 dark:text-stone-400">
+              If you have a special decorative elements, like borders or
+              emblems, we can make that happen.
+            </p>
+          </div>
+        </div>
+        <!-- end card 6 -->
       </div>
     </div>
   </section>
