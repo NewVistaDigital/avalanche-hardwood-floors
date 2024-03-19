@@ -6,120 +6,155 @@ import Alert from '../../components/ui/Alert.astro';
 // Content
 import logo from '../../assets/images/logo.svg?raw';
 import logoDark from '../../assets/images/logo-white.svg?raw';
-import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
+import { Astronav, MenuItems, MenuIcon } from 'astro-navbar';
 import { Icon } from 'astro-icon/components';
-
 ---
 
-<div class="bg-white dark:bg-stone-800 mb-5">
+<div class="mb-12 bg-white dark:bg-stone-800">
   <Alert />
-<header class="lg:flex p-5 items-center gap-5 container mx-auto">
-  <Astronav>
-    <div class="flex w-full justify-between">
-      
-      <a href="/" aria-label="homepage" class="inline-block h-auto align-middle" data-navLink>
-        <span class="inline-block w-auto pr-6 h-8 dark:hidden"><Fragment set:html={logo}></span>
-        <span class="hidden w-auto pr-6 h-8 dark:inline-block"><Fragment set:html={logoDark}></span>
-      </a>
-      <div class="block lg:hidden">
-        <MenuIcon class="w-4 h-4 text-gray-800">
-<svg class="ham hamRotate ham8" viewBox="0 0 100 100" width="40" onclick="this.classList.toggle('active')">
-  <path
-        class="line top stroke-stone-800 dark:stroke-white"
-        d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
-  <path
-        class="line middle stroke-stone-800 dark:stroke-white"
-        d="m 30,50 h 40" />
-  <path
-        class="line bottom stroke-stone-800 dark:stroke-white"
-        d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
-</svg>
-</MenuIcon>
+  <header class="container mx-auto items-center gap-5 p-5 lg:flex">
+    <Astronav>
+      <div class="flex w-full justify-between">
+        <a
+          href="/"
+          aria-label="homepage"
+          class="inline-block h-auto align-middle"
+          data-navLink
+        >
+          <span class="inline-block h-8 w-auto pr-6 dark:hidden"
+            ><Fragment set:html={logo} />
+            <span class="hidden h-8 w-auto pr-6 dark:inline-block"
+              ><Fragment set:html={logoDark} />
+            </span>
+            <div class="block lg:hidden">
+              <MenuIcon class="h-4 w-4 text-gray-800">
+                <svg
+                  class="ham hamRotate ham8"
+                  viewBox="0 0 100 100"
+                  width="40"
+                  onclick="this.classList.toggle('active')"
+                >
+                  <path
+                    class="line top stroke-stone-800 dark:stroke-white"
+                    d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"
+                  ></path>
+                  <path
+                    class="line middle stroke-stone-800 dark:stroke-white"
+                    d="m 30,50 h 40"></path>
+                  <path
+                    class="line bottom stroke-stone-800 dark:stroke-white"
+                    d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20"
+                  ></path>
+                </svg>
+              </MenuIcon>
+            </div>
+          </span>
+          <MenuItems class="hidden lg:flex">
+            <ul
+              class="flex flex-col items-end items-center lg:flex-row lg:gap-5"
+            >
+              <li>
+                <NavLink
+                  href="/"
+                  data-navLink
+                  class="inline-block p-2 text-xl outline-4 outline-amber-700 transition-colors hover:text-red-600 focus:ring-4 focus:ring-amber-700"
+                  >Home</NavLink
+                >
+              </li>
+              <li>
+                <NavLink
+                  href="/services"
+                  data-navLink
+                  class="inline-block p-2 text-xl outline-4 transition-colors hover:text-red-600 focus:ring-4 focus:ring-amber-700"
+                  >Services</NavLink
+                >
+              </li>
+              <li>
+                <NavLink
+                  href="/about"
+                  data-navLink
+                  class="inline-block p-2 text-xl outline-4 transition-colors hover:text-red-600 focus:ring-4 focus:ring-amber-700"
+                  >About</NavLink
+                >
+              </li>
+              <li>
+                <NavLink
+                  href="/gallery"
+                  data-navLink
+                  class="inline-block p-2 text-xl outline-4 transition-colors hover:text-red-600 focus:ring-4 focus:ring-amber-700"
+                  >Gallery</NavLink
+                >
+              </li>
+              <li>
+                <NavLink
+                  href="/contact"
+                  class="btn btn-primary w-max"
+                  data-navLink>Get a quote</NavLink
+                >
+              </li>
+            </ul>
+          </MenuItems>
+        </a>
       </div>
-    </div>
-    <MenuItems class="hidden lg:flex">
-      <ul class="flex flex-col lg:flex-row items-end items-center lg:gap-5">
-        <li><NavLink
-        href="/"
-        data-navLink
-        class="p-2 inline-block text-xl focus:ring-amber-700 outline-4 outline-amber-700 focus:ring-4 transition-colors hover:text-red-600">Home</NavLink
-      ></li>
-      <li><NavLink
-        href="/services"
-        data-navLink
-        class="p-2 inline-block text-xl focus:ring-amber-700 outline-4 focus:ring-4 transition-colors hover:text-red-600"
-        >Services</NavLink
-      ></li>
-      <li><NavLink
-        href="/about"
-        data-navLink
-        class="p-2 inline-block text-xl focus:ring-amber-700 outline-4 focus:ring-4 transition-colors hover:text-red-600">About</NavLink
-      ></li>
-      <li><NavLink
-        href="/gallery"
-        data-navLink
-        class="p-2 inline-block text-xl focus:ring-amber-700 outline-4 focus:ring-4 transition-colors hover:text-red-600"
-        >Gallery</NavLink
-      ></li>
-      <li><NavLink href="/contact" class="btn btn-primary w-max" data-navLink>Get a quote</NavLink></li>
-      </ul>
-    </MenuItems>
-  </Astronav>
-</header>
+    </Astronav>
+
+    <script>
+      // Accessibility tool: add aria-current to current page nav links.
+      const navLinks = document.querySelectorAll('[data-navLink]');
+
+      navLinks.forEach((link) => {
+        if (link.getAttribute('href') === window.location.pathname) {
+          link.setAttribute('aria-current', 'page');
+        }
+      });
+    </script>
+
+    <style>
+      .ham {
+        cursor: pointer;
+        transition: transform 400ms;
+        user-select: none;
+      }
+      .hamRotate.active {
+        transform: rotate(45deg);
+      }
+      .hamRotate180.active {
+        transform: rotate(180deg);
+      }
+      .line {
+        fill: none;
+        transition:
+          stroke-dasharray 400ms,
+          stroke-dashoffset 400ms;
+        stroke-width: 5.5;
+        stroke-linecap: round;
+      }
+
+      .ham8 .top {
+        stroke-dasharray: 40 160;
+      }
+      .ham8 .middle {
+        stroke-dasharray: 40 142;
+        transform-origin: 50%;
+        transition: transform 400ms;
+      }
+      .ham8 .bottom {
+        stroke-dasharray: 40 85;
+        transform-origin: 50%;
+        transition:
+          transform 400ms,
+          stroke-dashoffset 400ms;
+      }
+      .ham8.active .top {
+        stroke-dashoffset: -64px;
+      }
+      .ham8.active .middle {
+        //stroke-dashoffset: -20px;
+        transform: rotate(90deg);
+      }
+      .ham8.active .bottom {
+        stroke-dashoffset: -64px;
+      }
+    </style>
+  </header>
 </div>
-
-<script>
-  // Accessibility tool: add aria-current to current page nav links.
-  const navLinks = document.querySelectorAll('[data-navLink]');
-
-  navLinks.forEach((link) => {
-    if (link.getAttribute('href') === window.location.pathname) {
-      link.setAttribute('aria-current', 'page');
-    }
-  });
-
-
-</script>
-
-<style>
-.ham {
-  cursor: pointer;
-  transition: transform 400ms;
-  user-select: none;
-}
-.hamRotate.active {
-  transform: rotate(45deg);
-}
-.hamRotate180.active {
-  transform: rotate(180deg);
-}
-.line {
-  fill:none;
-  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-  stroke-width:5.5;
-  stroke-linecap:round;
-}
-
-.ham8 .top {
-  stroke-dasharray: 40 160;
-}
-.ham8 .middle {
-  stroke-dasharray: 40 142;
-  transform-origin: 50%;
-  transition: transform 400ms;
-}
-.ham8 .bottom {
-  stroke-dasharray: 40 85;
-  transform-origin: 50%;
-  transition: transform 400ms, stroke-dashoffset 400ms;
-}
-.ham8.active .top {
-  stroke-dashoffset: -64px;
-}
-.ham8.active .middle {
-  //stroke-dashoffset: -20px;
-  transform: rotate(90deg);
-}
-.ham8.active .bottom {
-  stroke-dashoffset: -64px;
-}</style>

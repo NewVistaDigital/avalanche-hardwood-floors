@@ -6,53 +6,109 @@ import { Image } from 'astro:assets';
 import bigLiving from '../../assets/images/big-living.jpg';
 import repairA from '../../assets/images/repair-before.png';
 import repairB from '../../assets/images/repair-during.png';
-import repairC from '../../assets/images/repair-before.png';
+import repairC from '../../assets/images/repair-after.png';
 import stockKitchen from '../../assets/images/kitchen-1.jpg';
 import closeUp from '../../assets/images/close-up.jpg';
 ---
-<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16">
-    <div class="grid gap-4">
-        <div>
-            <Image src={repairA} alt="Repair before" width="410" class="h-auto max-w-full rounded-lg"/>
-        </div>
-        <div>
-            <Image src={repairB} alt="Repair during" width="410" class="h-auto max-w-full rounded-lg"/>
-        </div>
-        <div>
-            <Image src={repairC} alt="Repair after" width="410" class="h-auto max-w-full rounded-lg"/>
-        </div>
+
+<div class="mt-16 grid grid-cols-2 gap-4 md:grid-cols-4">
+  <div class="grid gap-4">
+    <div>
+      <Image
+        src={repairA}
+        alt="Repair before"
+        width="410"
+        class="h-auto max-w-full rounded-lg"
+      />
     </div>
-    <div class="grid gap-4">
-        <div>
-            <Image src={bigLiving} alt="Kitchen" width="410" class="h-auto max-w-full rounded-lg"/>
-        </div>
-        <div>
-            <Image src={stockKitchen} alt="Kitchen" width="410" class="h-auto max-w-full rounded-lg"/>
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="">
-        </div>
+    <div>
+      <Image
+        src={repairB}
+        alt="Repair during"
+        width="410"
+        class="h-auto max-w-full rounded-lg"
+      />
     </div>
-    <div class="grid gap-4">
-        <div>
-            <Image src={closeUp} alt="Kitchen" width="410" class="h-auto max-w-full rounded-lg"/>
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="">
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="">
-        </div>
+    <div>
+      <Image
+        src={repairC}
+        alt="Repair after"
+        width="410"
+        class="h-auto max-w-full rounded-lg"
+      />
     </div>
-    <div class="grid gap-4">
-        <div>
-            <Image src={bigLiving} alt="Living room wood floors" width="410" class="h-auto max-w-full rounded-lg"/>
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="">
-        </div>
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt="">
-        </div>
+  </div>
+  <div class="grid gap-4">
+    <div>
+      <Image
+        src={bigLiving}
+        alt="Kitchen"
+        width="410"
+        class="h-auto max-w-full rounded-lg"
+      />
     </div>
+    <div>
+      <Image
+        src={stockKitchen}
+        alt="Kitchen"
+        width="410"
+        class="h-auto max-w-full rounded-lg"
+      />
+    </div>
+    <div>
+      <img
+        class="h-auto max-w-full rounded-lg"
+        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg"
+        alt=""
+      />
+    </div>
+  </div>
+  <div class="grid gap-4">
+    <div>
+      <Image
+        src={closeUp}
+        alt="Kitchen"
+        width="410"
+        class="h-auto max-w-full rounded-lg"
+      />
+    </div>
+    <div>
+      <img
+        class="h-auto max-w-full rounded-lg"
+        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg"
+        alt=""
+      />
+    </div>
+    <div>
+      <img
+        class="h-auto max-w-full rounded-lg"
+        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg"
+        alt=""
+      />
+    </div>
+  </div>
+  <div class="grid gap-4">
+    <div>
+      <Image
+        src={bigLiving}
+        alt="Living room wood floors"
+        width="410"
+        class="h-auto max-w-full rounded-lg"
+      />
+    </div>
+    <div>
+      <img
+        class="h-auto max-w-full rounded-lg"
+        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg"
+        alt=""
+      />
+    </div>
+    <div>
+      <img
+        class="h-auto max-w-full rounded-lg"
+        src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg"
+        alt=""
+      />
+    </div>
+  </div>
 </div>
