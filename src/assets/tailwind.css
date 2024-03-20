@@ -22,6 +22,11 @@
 }
 
 @layer base {
+  html {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
   h1 {
     @apply text-4xl font-extrabold;
   }
