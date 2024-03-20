@@ -5,36 +5,31 @@ import { Icon } from 'astro-icon/components';
 import { Image } from 'astro:assets';
 
 // Content
-import addition from '../assets/images/addition1.jpg';
+import addition from '../assets/images/repair-1.jpg';
 import construction from '../assets/images/construction2.jpg';
 import newInstall from '../assets/images/installation.jpg';
-import repair from '../assets/images/repair-2.jpg';
+import repair from '../assets/images/repair-during.png';
 import stain from '../assets/images/staining2.jpeg';
 import medallion from '../assets/images/medallion-2a.jpg';
 ---
 
 <BaseLayout>
   <section
-    class="container mx-auto mb-12 rounded-2xl bg-stone-300 bg-cover bg-bottom bg-blend-overlay dark:bg-stone-900"
-  >
+    class="container mx-auto mb-12 rounded-2xl bg-stone-300 bg-cover bg-bottom bg-blend-overlay dark:bg-stone-900">
     <div
-      class="mx-auto max-w-screen-xl px-4 py-10 text-center lg:px-20 lg:py-40"
-    >
+      class="mx-auto max-w-screen-xl px-4 py-10 text-center lg:px-20 lg:py-40">
       <h1
-        class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-stone-900 dark:text-white md:text-5xl lg:text-6xl"
-      >
+        class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-stone-900 dark:text-white md:text-5xl lg:text-6xl">
         A wide range of wood floor services
       </h1>
       <p
-        class="mb-8 text-xl text-black dark:text-stone-400 sm:px-16 lg:text-2xl xl:px-48"
-      >
+        class="mb-8 text-xl text-black dark:text-stone-400 sm:px-16 lg:text-2xl xl:px-48">
         When it comes to hardwood floors, we can do it all. If you have any
         questions, give us a call and we'll come over to discuss your project
         with a no-pressure conversation.
       </p>
       <div
-        class="mb-8 space-y-4 sm:flex-row sm:justify-center sm:space-x-4 sm:space-y-0 lg:mb-16"
-      >
+        class="mb-8 space-y-4 sm:flex-row sm:justify-center sm:space-x-4 sm:space-y-0 lg:mb-16">
         <Button
           text="Get a quote"
           classes="btn-primary"
@@ -49,11 +44,10 @@ import medallion from '../assets/images/medallion-2a.jpg';
     <div class="mx-auto max-w-screen-xl py-8 sm:py-16 md:px-4 lg:px-6">
       <div class="mx-auto mb-16 max-w-screen-md">
         <h2
-          class="mb-4 text-4xl font-extrabold tracking-tight text-stone-900 dark:text-white"
-        >
+          class="mb-4 text-4xl font-extrabold tracking-tight text-stone-900 dark:text-white">
           Trusted services.
         </h2>
-        <p class="text-stone-500 dark:text-stone-400 sm:text-xl">
+        <p class="mb-3 text-stone-600 dark:text-stone-400 sm:text-xl">
           We've done it all, from the largest luxury homes in the city to condos
           and everything in between. If designers in <a
             href="https://springsparade.com/web/"
@@ -68,8 +62,7 @@ import medallion from '../assets/images/medallion-2a.jpg';
         <!-- Card 1 odd -->
         <div
           data-type="card"
-          class="flex items-center gap-12 rounded-2xl bg-white p-4 pb-12 shadow-2xl dark:bg-stone-800 max-md:flex-col max-md:items-center md:p-12"
-        >
+          class="flex items-center gap-12 rounded-2xl bg-white p-4 pb-12 shadow-2xl dark:bg-stone-800 max-md:flex-col max-md:items-center md:p-12">
           <Image
             src={newInstall}
             alt="New install"
@@ -78,8 +71,7 @@ import medallion from '../assets/images/medallion-2a.jpg';
           />
           <div class="flex flex-col max-md:items-center">
             <div
-              class="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-red-100 dark:bg-red-900 max-sm:mx-auto lg:h-12 lg:w-12"
-            >
+              class="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-red-100 dark:bg-red-900 max-sm:mx-auto lg:h-12 lg:w-12">
               <Icon
                 name="tabler:axe"
                 class="size-6 text-red-800 dark:text-red-300"
@@ -89,9 +81,22 @@ import medallion from '../assets/images/medallion-2a.jpg';
             <h3 class="mb-2 text-2xl font-bold dark:text-white">
               New Installs
             </h3>
-            <p class="text-stone-500 dark:text-stone-400">
-              Bring fresh life to your home. We'll install the material and
-              finish of your choice.
+            <p class="mb-3 text-stone-600 dark:text-stone-400">
+              Hardwood floors not only enhance the look of your home, but are
+              also the most resilient and easy to clean floors around. That's
+              not to mention the value it adds to your home. We install a
+              variety of materials, from site finished natural wood, to
+              prefinished and engineered products.
+            </p>
+            <p class="mb-3 text-stone-600 dark:text-stone-400">
+              The process couldn't be easier. With our specialized
+              dust-collection equipment and best practices, your home will be
+              cleaner than when we started.
+            </p>
+            <p class="mb-3 text-stone-600 dark:text-stone-400">
+              Whether you have product you'd like us to install, or want us to
+              deliver it for you, we're here to help you make the best decision
+              for your hardwood floors.
             </p>
           </div>
         </div>
@@ -99,8 +104,7 @@ import medallion from '../assets/images/medallion-2a.jpg';
         <!-- Card 2 even -->
         <div
           data-type="card"
-          class="flex flex-row-reverse items-center gap-12 rounded-2xl bg-white p-4 pb-12 shadow-2xl dark:bg-stone-800 max-md:flex-col max-md:items-center md:p-12"
-        >
+          class="flex flex-row-reverse items-center gap-12 rounded-2xl bg-white p-4 pb-12 shadow-2xl dark:bg-stone-800 max-md:flex-col max-md:items-center md:p-12">
           <Image
             src={stain}
             alt="Hardwood floor refinishing"
@@ -109,8 +113,7 @@ import medallion from '../assets/images/medallion-2a.jpg';
           />
           <div class="flex flex-col max-md:items-center">
             <div
-              class="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-red-100 dark:bg-red-900 max-sm:mx-auto lg:h-12 lg:w-12"
-            >
+              class="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-red-100 dark:bg-red-900 max-sm:mx-auto lg:h-12 lg:w-12">
               <Icon
                 name="tabler:paint-filled"
                 class="size-6 text-red-800 dark:text-red-300"
@@ -118,9 +121,20 @@ import medallion from '../assets/images/medallion-2a.jpg';
             </div>
 
             <h3 class="mb-2 text-2xl font-bold dark:text-white">Refinishing</h3>
-            <p class="text-stone-500 dark:text-stone-400">
-              Whether you need a maintenance coat or a full re-sand, we can make
-              your existing floors look good as new without making a huge mess.
+            <p class="mb-3 text-stone-600 dark:text-stone-400">
+              Life happens, pets and kids happen, your floors get scratched.
+            </p>
+            <p class="mb-3 text-stone-600 dark:text-stone-400">
+              More often than not, an <b
+                >inexpensive maintenance coat on your wood floors will make them
+                look as good as new</b
+              >, and is a fraction of the cost of sanding down to the bare wood.
+            </p>
+            <p class="mb-3 text-stone-600 dark:text-stone-400">
+              Hardwood floors in historic homes tend to have stains and deep
+              scratches. Hardwood floors tend to change color over the years as
+              well. When we resand, we color match the stain to create a perfect
+              match.
             </p>
           </div>
         </div>
@@ -128,8 +142,7 @@ import medallion from '../assets/images/medallion-2a.jpg';
         <!-- Card 3 odd -->
         <div
           data-type="card"
-          class="flex items-center gap-12 rounded-2xl bg-white p-4 pb-12 shadow-2xl dark:bg-stone-800 max-md:flex-col max-md:items-center md:p-12"
-        >
+          class="flex items-center gap-12 rounded-2xl bg-white p-4 pb-12 shadow-2xl dark:bg-stone-800 max-md:flex-col max-md:items-center md:p-12">
           <Image
             src={addition}
             alt="New install"
@@ -138,8 +151,7 @@ import medallion from '../assets/images/medallion-2a.jpg';
           />
           <div class="flex flex-col max-md:items-center">
             <div
-              class="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-red-100 dark:bg-red-900 max-sm:mx-auto lg:h-12 lg:w-12"
-            >
+              class="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-red-100 dark:bg-red-900 max-sm:mx-auto lg:h-12 lg:w-12">
               <Icon
                 name="tabler:playlist-add"
                 class="size-6 text-red-800 dark:text-red-300"
@@ -149,7 +161,12 @@ import medallion from '../assets/images/medallion-2a.jpg';
             <h3 class="mb-2 text-2xl font-bold dark:text-white">
               Additions & Extensions
             </h3>
-            <p class="text-stone-500 dark:text-stone-400">
+            <p class="mb-3 text-stone-600 dark:text-stone-400">
+              Want to extend your kitchen to the entire floor? We can lace-in
+              new installs with existing, making a seamless transition from old
+              to new.
+            </p>
+            <p class="mb-3 text-stone-600 dark:text-stone-400">
               Want to extend your kitchen to the entire floor? We can lace-in
               new installs with existing, making a seamless transition from old
               to new.
@@ -160,28 +177,32 @@ import medallion from '../assets/images/medallion-2a.jpg';
         <!-- Card 4 even -->
         <div
           data-type="card"
-          class="flex flex-row-reverse items-center gap-12 rounded-2xl bg-white p-4 pb-12 shadow-2xl dark:bg-stone-800 max-md:flex-col max-md:items-center md:p-12"
-        >
+          class="flex flex-row-reverse items-center gap-12 rounded-2xl bg-white p-4 pb-12 shadow-2xl dark:bg-stone-800 max-md:flex-col max-md:items-center md:p-12">
           <Image
             src={repair}
             alt="Hardwood floor refinishing"
-            width="600"
-            class="rounded-xl shadow-lg max-sm:mb-12 max-sm:scale-[1.15] sm:max-md:-mt-12 md:-mr-20 md:max-w-[50%]"
+            width="400"
+            class="rounded-xl shadow-lg max-sm:mb-12 max-sm:scale-[1.15] sm:max-md:-mt-12 md:max-w-[50%]"
           />
           <div class="flex flex-col max-md:items-center">
             <div
-              class="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-red-100 dark:bg-red-900 max-sm:mx-auto lg:h-12 lg:w-12"
-            >
+              class="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-red-100 dark:bg-red-900 max-sm:mx-auto lg:h-12 lg:w-12">
               <Icon
                 name="tabler:bandage"
                 class="size-6 text-red-800 dark:text-red-300"
               />
             </div>
-
             <h3 class="mb-2 text-2xl font-bold dark:text-white">Repairs</h3>
-            <p class="text-stone-500 dark:text-stone-400">
-              Water damage? Damaged pre-finished hardwood floors? We can fix
-              your hardwood floors. You won't even know we were there.
+            <p class="mb-3 text-stone-600 dark:text-stone-400">
+              Water damage? Damaged pre-finished hardwood floors? We've seen it
+              all (ask us for stories). And we've fixed it all.
+            </p>
+            <p class="mb-3 text-stone-600 dark:text-stone-400">
+              Sometimes a full re-sand of your wood floors is not feasible, as
+              in the case of prefinished flooring. We can often replace
+              individual boards that have been damaged. After gluing and
+              nailing, the repaired area ends up being even more durable than
+              the surrounding floors.
             </p>
           </div>
         </div>
@@ -189,8 +210,7 @@ import medallion from '../assets/images/medallion-2a.jpg';
         <!-- Card 5 odd -->
         <div
           data-type="card"
-          class="flex items-center gap-12 rounded-2xl bg-white p-4 pb-12 shadow-2xl dark:bg-stone-800 max-md:flex-col max-md:items-center md:p-12"
-        >
+          class="flex items-center gap-12 rounded-2xl bg-white p-4 pb-12 shadow-2xl dark:bg-stone-800 max-md:flex-col max-md:items-center md:p-12">
           <Image
             src={construction}
             alt="New install"
@@ -199,8 +219,7 @@ import medallion from '../assets/images/medallion-2a.jpg';
           />
           <div class="flex flex-col max-md:items-center">
             <div
-              class="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-red-100 dark:bg-red-900 max-sm:mx-auto lg:h-12 lg:w-12"
-            >
+              class="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-red-100 dark:bg-red-900 max-sm:mx-auto lg:h-12 lg:w-12">
               <Icon
                 name="tabler:home-plus"
                 class="size-6 text-red-800 dark:text-red-300"
@@ -210,8 +229,19 @@ import medallion from '../assets/images/medallion-2a.jpg';
             <h3 class="mb-2 text-2xl font-bold dark:text-white">
               New Construction
             </h3>
-            <p class="text-stone-500 dark:text-stone-400">
-              We've worked with plenty of builders on new and custom homes.
+            <p class="mb-3 text-stone-600 dark:text-stone-400">
+              We've worked with plenty of builders on new and custom homes and
+              they love us. We work well with the tight schedules that comes
+              with new construction.
+            </p>
+            <p class="mb-3 text-stone-600 dark:text-stone-400">
+              We also take great care with the other trades in the house to make
+              sure nobody's work is damaged during the build process.
+            </p>
+            <p class="mb-3 text-stone-600 dark:text-stone-400">
+              The final coat of the floors should be the last thing that happens
+              before you move in. Request Avalanche Hardwood Floors when working
+              with your builder.
             </p>
           </div>
         </div>
@@ -219,8 +249,7 @@ import medallion from '../assets/images/medallion-2a.jpg';
         <!-- Card 6 even -->
         <div
           data-type="card"
-          class="flex flex-row-reverse items-center gap-12 rounded-2xl bg-white p-4 pb-12 shadow-2xl dark:bg-stone-800 max-md:flex-col max-md:items-center md:p-12"
-        >
+          class="flex flex-row-reverse items-center gap-12 rounded-2xl bg-white p-4 pb-12 shadow-2xl dark:bg-stone-800 max-md:flex-col max-md:items-center md:p-12">
           <Image
             src={medallion}
             alt="Hardwood floor refinishing"
@@ -229,8 +258,7 @@ import medallion from '../assets/images/medallion-2a.jpg';
           />
           <div class="flex flex-col max-md:items-center">
             <div
-              class="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-red-100 dark:bg-red-900 max-sm:mx-auto lg:h-12 lg:w-12"
-            >
+              class="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-red-100 dark:bg-red-900 max-sm:mx-auto lg:h-12 lg:w-12">
               <Icon
                 name="tabler:background"
                 class="size-6 text-red-800 dark:text-red-300"
@@ -240,13 +268,18 @@ import medallion from '../assets/images/medallion-2a.jpg';
             <h3 class="mb-2 text-2xl font-bold dark:text-white">
               Custom Medallions & Inlays
             </h3>
-            <p class="text-stone-500 dark:text-stone-400">
-              If you have a special decorative elements, like borders or
-              emblems, we can make that happen.
+            <p class="mb-3 text-stone-600 dark:text-stone-400">
+              These hardwood medallions and inlays are actually quite
+              affordable, often premanufactured on a CNC machine.
+            </p>
+            <p class="mb-3 text-stone-600 dark:text-stone-400">
+              We've installed <b>family crests</b>, compass roses & stars,
+              borders, herringbone, and other decorative patterns in plenty of
+              homes. Ask us about the process.
             </p>
           </div>
+          <!-- end card 6 -->
         </div>
-        <!-- end card 6 -->
       </div>
     </div>
   </section>
