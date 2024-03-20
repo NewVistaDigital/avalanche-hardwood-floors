@@ -11,7 +11,7 @@ export const SITE_DESCRIPTION = 'The best hardwood floor company in Colorado Spr
 export const SITE_URL = 'https://springshardwood.com/';
 export const SITE_EMAIL = 'rickmutz@yahoo.com';
 export const SITE_UTM_SOURCE = slugify(SITE_TITLE);
-export const SITE_DEFAULT_IMAGE = '/blog-placeholder-1.jpg';
+export const SITE_DEFAULT_IMAGE = '/nice-bedroom.jpg';
 export const SITE_PHONE = '(719) 492-8134'
 export const SITE_PHONE_HREF = 'tel:7194928134'
 
