@@ -2,10 +2,7 @@
 import { ANALYTICS_GA4 } from 'src/consts';
 ---
 
-<script
-  async
-  src={`https://www.googletagmanager.com/gtag/js?id=${ANALYTICS_GA4}`}></script>
-<script>
+<script type="text/partytown">
   window.dataLayer = window.dataLayer || [];
   function gtag() {
     dataLayer.push(arguments);
