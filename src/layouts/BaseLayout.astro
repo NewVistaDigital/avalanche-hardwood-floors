@@ -4,8 +4,6 @@ import BaseHead from '../components/site/BaseHead.astro';
 import Header from '../components/site/Header.astro';
 import Footer from '../components/site/Footer.astro';
 
-// Components
-import GA4 from '../components/site/GoogleAnalytics.astro';
 // Data
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
@@ -15,7 +13,6 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
-  <GA4 />
   <body
     class="bg-stone-100 text-stone-900 transition-colors dark:bg-stone-900 dark:text-stone-100">
     <a href="#main-content" class="sr-only focus:not-sr-only">Skip to content</a
