@@ -9,11 +9,11 @@ import Services from '../components/content/HomeServices2.astro';
 import CTA from '../components/ui/CallToAction.astro';
 ---
 
-<BaseLayout>
-  <div class="overflow-x-hidden">
+<div class="max-sm:overflow-x-hidden">
+  <BaseLayout>
     <Hero />
-  </div>
-  <About />
-  <Services />
-  <CTA />
-</BaseLayout>
+    <About />
+    <Services />
+    <CTA />
+  </BaseLayout>
+</div>
