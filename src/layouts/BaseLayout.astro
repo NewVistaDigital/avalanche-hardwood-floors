@@ -14,9 +14,9 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
   </head>
   <body
-    class="bg-stone-100 text-stone-900 transition-colors dark:bg-stone-900 dark:text-stone-100"
-  >
-    <a href="#main-content" class="sr-only">Skip to content</a>
+    class="bg-stone-100 text-stone-900 transition-colors dark:bg-stone-900 dark:text-stone-100">
+    <a href="#main-content" class="sr-only focus:not-sr-only">Skip to content</a
+    >
     <Header />
     <main id="#main-content" class="max-md:p-5">
       <slot>
