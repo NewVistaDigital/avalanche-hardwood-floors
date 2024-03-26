@@ -1,5 +1,5 @@
 ---
-import { SITE_UTM_SOURCE } from "src/consts";
+import { SITE_PHONE, SITE_PHONE_HREF, SITE_UTM_SOURCE } from "src/consts";
 ---
 
 <section class="bg-white dark:bg-stone-900">
@@ -9,9 +9,16 @@ import { SITE_UTM_SOURCE } from "src/consts";
       Contact Us
     </h2>
     <p
-      class="mb-8 text-center font-light text-stone-500 dark:text-stone-400 sm:text-xl lg:mb-16">
-      Got a technical issue? Want to send feedback about a beta feature? Need
-      details about our Business plan? Let us know.
+      class="mb-8 text-center font-light text-stone-500 dark:text-stone-400 sm:text-xl">
+      Fill out the form below or call us with any questions you have. We'll get
+      you pointed in the right direction.
+    </p>
+    <p
+      class="mb-8 text-center font-light text-stone-500 dark:text-stone-400 sm:text-xl">
+      Call Rick, the owner of Avalanche Hardwood Floors, at <a
+        class="font-bold"
+        href=`${SITE_PHONE_HREF}`>{SITE_PHONE}</a
+      >
     </p>
     <form
       action="/success"
