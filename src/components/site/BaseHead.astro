@@ -1,9 +1,10 @@
 ---
 // Built-in CSS styles.
-import '../../assets/tailwind.css';
+import "../../assets/tailwind.css";
 
 // Data
-import { SITE_TITLE, SITE_DEFAULT_IMAGE } from '../../consts';
+import { SITE_TITLE, SITE_DEFAULT_IMAGE, ANALYTICS_GA4 } from "../../consts";
+import GoogleAnalytics from "./GoogleAnalytics.astro";
 
 interface Props {
   title: string;
@@ -14,6 +15,8 @@ interface Props {
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const { title, description } = Astro.props;
 ---
+
+<GoogleAnalytics id={ANALYTICS_GA4} />
 
 <!-- Global Metadata -->
 <meta charset="utf-8" />
@@ -48,11 +51,11 @@ const { title, description } = Astro.props;
 <script is:inline>
   // import '../../js/darkMode.js';
 
-  const storageKey = 'theme-preference';
+  const storageKey = "theme-preference";
 
   const themeValues = () => {
     // flip current value
-    theme.value = theme.value === 'light' ? 'dark' : 'light';
+    theme.value = theme.value === "light" ? "dark" : "light";
     setPreference();
   };
 
@@ -60,9 +63,9 @@ const { title, description } = Astro.props;
     if (localStorage.getItem(storageKey))
       return localStorage.getItem(storageKey);
     else
-      return window.matchMedia('(prefers-color-scheme: dark)').matches
-        ? 'dark'
-        : 'light';
+      return window.matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark"
+        : "light";
   };
 
   const setPreference = () => {
@@ -71,10 +74,10 @@ const { title, description } = Astro.props;
   };
 
   const reflectPreference = () => {
-    document.firstElementChild.setAttribute('class', theme.value);
+    document.firstElementChild.setAttribute("class", theme.value);
     document
-      .querySelector('#theme-toggle')
-      ?.setAttribute('aria-label', theme.value);
+      .querySelector("#theme-toggle")
+      ?.setAttribute("aria-label", theme.value);
   };
 
   const theme = {
@@ -87,14 +90,14 @@ const { title, description } = Astro.props;
     reflectPreference();
     // now this script can find and listen for clicks on the control
     document
-      .querySelector('#theme-toggle')
-      .addEventListener('click', themeValues);
+      .querySelector("#theme-toggle")
+      .addEventListener("click", themeValues);
   };
   // sync with system changes
   window
-    .matchMedia('(prefers-color-scheme: dark)')
-    .addEventListener('change', ({ matches: isDark }) => {
-      theme.value = isDark ? 'dark' : 'light';
+    .matchMedia("(prefers-color-scheme: dark)")
+    .addEventListener("change", ({ matches: isDark }) => {
+      theme.value = isDark ? "dark" : "light";
       setPreference();
     });
 </script>

@@ -20,6 +20,11 @@ export default defineConfig({
     }),
     tailwind(),
     robotsTxt(),
+    partytown({
+      config: {
+        forward: ['dataLayer.push'],
+      },
+    }),
   ],
   output: "static",
   adapter: netlify(),

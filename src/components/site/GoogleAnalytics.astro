@@ -1,13 +1,23 @@
 ---
-import { ANALYTICS_GA4 } from 'src/consts';
+interface Props {
+  id: string;
+}
+
+const { id } = Astro.props;
 ---
 
-<script is:inline type="text/partytown">
+<!-- Google tag (gtag.js) -->
+<script
+  is:inline
+  async
+  type="text/partytown"
+  src=`https://www.googletagmanager.com/gtag/js?id=${id}`></script>
+<script is:inline define:vars={{ id }} type="text/partytown">
   window.dataLayer = window.dataLayer || [];
   function gtag() {
     dataLayer.push(arguments);
   }
-  gtag('js', new Date());
+  gtag("js", new Date());
 
-  gtag('config', `${ANALYTICS_GA4}`);
+  gtag("config", id);
 </script>
