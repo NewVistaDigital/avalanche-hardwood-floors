@@ -1,11 +1,11 @@
 ---
 // Components
-import NavLink from "../../components/ui/NavLink.astro";
-import Alert from "../../components/ui/Alert.astro";
+import NavLink from "@components/ui/NavLink.astro";
+import Alert from "@components/ui/Alert.astro";
 
 // Content
-import logo from "../../assets/images/logo.svg?raw";
-import logoDark from "../../assets/images/logo-white.svg?raw";
+import logo from "@assets/images/logo.svg?raw";
+import logoDark from "@assets/images/logo-white.svg?raw";
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 ---
 
@@ -60,18 +60,18 @@ import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
           </li>
           <li>
             <NavLink
-              href="/services"
-              data-navLink
-              class="inline-block p-2 text-xl outline-4 transition-colors hover:text-red-600 focus:ring-4 focus:ring-amber-700"
-              >Services</NavLink
-            >
-          </li>
-          <li>
-            <NavLink
               href="/about"
               data-navLink
               class="inline-block p-2 text-xl outline-4 transition-colors hover:text-red-600 focus:ring-4 focus:ring-amber-700"
               >About</NavLink
+            >
+          </li>
+          <li>
+            <NavLink
+              href="/services"
+              data-navLink
+              class="inline-block p-2 text-xl outline-4 transition-colors hover:text-red-600 focus:ring-4 focus:ring-amber-700"
+              >Services</NavLink
             >
           </li>
           <li>

@@ -1,10 +1,10 @@
 ---
 // Components
-import Button from '@components/ui/Button.astro';
+import Button from "@components/ui/Button.astro";
 
 // Content
-import { getImage } from 'astro:assets';
-import kitchen from '../../assets/images/stairs-2.jpg';
+import { getImage } from "astro:assets";
+import kitchen from "@assets/images/stairs-2.jpg";
 const optimizedBackgroundImage = await getImage({ src: kitchen, width: 1000 });
 ---
 
@@ -28,7 +28,7 @@ const optimizedBackgroundImage = await getImage({ src: kitchen, width: 1000 });
         text="Get a quote"
         classes="btn-primary"
         href="/contact"
-        icon={{ name: 'tabler:arrow-right', side: 'right' }}
+        icon={{ name: "tabler:arrow-right", side: "right" }}
       />
       <Button text="View projects" classes="btn-secondary" href="/gallery" />
     </div>

@@ -1,14 +1,14 @@
 ---
 // Layout
-import BaseHead from '../components/site/BaseHead.astro';
-import Header from '../components/site/Header.astro';
-import Footer from '../components/site/Footer.astro';
+import BaseHead from "@components/site/BaseHead.astro";
+import Header from "@components/site/Header.astro";
+import Footer from "@components/site/Footer.astro";
 
 // Data
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { SITE_TITLE, SITE_DESCRIPTION } from "@src/consts";
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-const { title = SITE_TITLE, description=SITE_DESCRIPTION } = Astro.props;
+// const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const { title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.props;
 ---
 
 <!doctype html>
@@ -25,27 +25,8 @@ const { title = SITE_TITLE, description=SITE_DESCRIPTION } = Astro.props;
     <main id="main-content" class="max-md:p-5">
       <slot>
         <h1>Under construction</h1>
-        Header />
-        <main id="main-content" class="max-md:p-5">
-          <slot>
-            <h1>Under construction</h1>
-            Header />
-            <main id="main-content" class="max-md:p-5">
-              <slot>
-                <h1>Under construction</h1>
-                Header />
-                <main id="main-content" class="max-md:p-5">
-                  <slot>
-                    <h1>Under construction</h1>
-                    <p>No content found just yet...</p>
-                  </slot>
-                </main>
-                <Footer />
-              </slot>
-            </main>
-          </slot>
-        </main></slot
-      >
-    </main></body
-  >
+      </slot>
+    </main>
+    <Footer />
+  </body>
 </html>

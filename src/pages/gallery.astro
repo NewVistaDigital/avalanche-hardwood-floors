@@ -1,18 +1,23 @@
 ---
 // Layout
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from "@layouts/BaseLayout.astro";
 
 // Content
-import ImageGallery from '../components/content/Gallery.astro'
-import CTA from '../components/ui/CallToAction.astro'
+import ImageGallery from "@components/content/Gallery.astro";
+import CTA from "@components/ui/CallToAction.astro";
 ---
 
-<BaseLayout>
+<BaseLayout title="Colorado Springs hardwood floors image gallery">
   <article class="container mx-auto lg:px-16">
     <h1>Our projects</h1>
-    <p>Below are just a few images from jobs we've done. These include hardwood floor repairs, wood floor site sand and refinishes, fresh installs, and more.</p>
+    <p>
+      Below are just a few images from jobs we've done. These include hardwood
+      floor repairs, wood floor site sand and refinishes, fresh installs, and
+      more.
+    </p>
     <ImageGallery />
     <div class="text-center">
-    <CTA class="-mb-16"/></div>
+      <CTA class="-mb-16" />
+    </div>
   </article>
 </BaseLayout>
