@@ -12,7 +12,7 @@
   }
 
   .btn-primary {
-    @apply btn text-white bg-red-800 hover:bg-red-700 active:bg-red-900 hover:text-white dark:text-white bg-gradient-to-br;
+    @apply btn text-white bg-red-800 hover:bg-red-700 active:bg-red-900 hover:text-white dark:text-white;
   }
 
   .btn-secondary {
