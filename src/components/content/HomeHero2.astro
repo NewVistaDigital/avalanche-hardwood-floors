@@ -5,6 +5,7 @@ import Button from "@components/ui/Button.astro";
 // Content
 import { Image } from "astro:assets";
 import living from "@assets/images/nice-bedroom.jpg";
+import books from "@assets/images/books-1.jpg";
 ---
 
 <section
@@ -12,28 +13,28 @@ import living from "@assets/images/nice-bedroom.jpg";
   <div class="block grid-cols-12 items-center px-8 md:px-16 xl:grid">
     <div class="col-span-5 py-10 lg:py-20">
       <h1
-        class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-stone-900 dark:text-white md:text-5xl lg:text-6xl">
+        class="mb-4 text-4xl font-extrabold tracking-tight text-stone-900 dark:text-white md:text-5xl lg:text-6xl">
         Hardwood floors done right. Guaranteed.
       </h1>
       <p
         class="mb-8 text-xl font-semibold text-black dark:text-stone-400 lg:text-2xl">
-        Avalanche Hardwood Floors we focus on quality and trust. Give us a call
-        for a free, no pressure estimate to help get you pointed in the right
-        direction.
+        For over 20 years we've focued on qualtiy and service you can trust.
+        Give us a call for a free, no pressure estimate to help get you pointed
+        in the right direction.
       </p>
       <div
         class="mb-8 space-y-4 sm:flex-row sm:justify-center sm:space-x-4 sm:space-y-0 lg:mb-16">
         <Button
-          text="Get a quote"
+          text="Book a free estimate"
           classes="btn-primary"
-          href="/contact"
+          href="/contact?utm_source=home-hero"
           icon={{ name: "tabler:arrow-right", side: "right" }}
         />
         <Button text="View projects" classes="btn-secondary" href="/gallery" />
       </div>
     </div>
     <Image
-      src={living}
+      src={books}
       alt="Colorado Srings hardwood floor"
       width="900"
       format="webp"
